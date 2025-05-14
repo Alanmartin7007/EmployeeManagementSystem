@@ -1,0 +1,34 @@
+<h1  class= "p-3 mb-2 bg-secondary text-white" style="padding: 1% 3% 4%">Employee Management System</h1>
+ 
+<nav class="navbar navbar-expand navbar-primary bg-light  " >
+            <a class="navbar-brand ">{{title}}</a>                    
+  
+    <ul class="nav nav-tabs nav-justified">
+      
+     
+      <li class="active">
+          <a class="nav-link "  data-toggle="tab" [routerLink]="['']"> Home</a>
+      </li>
+     
+      <li >
+          <a class="nav-link " data-toggle="tab" [routerLink]="['/departments']" > Department List</a>
+      </li>
+      <!-- routing is done with square brackets -->
+      <li >
+          <a class="nav-link "  data-toggle="tab"[routerLink]="['/employees']" > Employee List</a>
+      </li>
+      <li>
+        <a  class="nav-link " data-toggle="tab" [routerLink]="['/departments/add']">  Add Department</a>
+    </li>
+    <li >
+        <a class="nav-link " data-toggle="tab" [routerLink]="['/employees/add']">  Add Employee</a>
+    </li>
+    <li >
+        <a class="nav-link " data-toggle="tab" [routerLink]="['/logout']">  Logout</a>
+    </li>
+  </ul>
+</nav>
+
+
+<router-outlet></router-outlet>
+ 
